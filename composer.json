@@ -1,0 +1,30 @@
+{
+    "name": "zeroplex/php-reader",
+    "authors": [
+        {
+            "name": "Mila Nasteva",
+            "email": "mila.nasteva@zeroplex.nl"
+        }
+    ],
+
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ZeroPlex\\PhpReader\\": "src/"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "php": "^7.3 | ^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZeroPlex\\PhpReader\\PhpReaderServiceProvider"
+            ],
+            "aliases": {
+                "PhpReader": "ZeroPlex\\PhpReader\\Facades\\PhpReader"
+            }
+        }
+    }
+}
